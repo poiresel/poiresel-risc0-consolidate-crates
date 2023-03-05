@@ -1,0 +1,17 @@
+[package]
+name = "host-consolidated"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[[bin]]
+name = "multiply"
+path = "guest/src/bin/multiply.rs"
+
+[build-dependencies]
+risc0-build = "0.12"
+
+[dependencies]
+risc0-zkvm = { version = "0.12", default-features = false }
+# multiply = { artifact = "bin", version = "1.0", lib = true }
