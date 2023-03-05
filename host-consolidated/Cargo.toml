@@ -7,7 +7,7 @@ edition = "2021"
 
 [[bin]]
 name = "multiply"
-path = "guest/src/bin/multiply.rs"
+path = "methods/guest/src/bin/multiply.rs"
 
 [build-dependencies]
 risc0-build = "0.12"
