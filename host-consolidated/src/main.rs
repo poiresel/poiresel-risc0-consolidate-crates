@@ -5,8 +5,10 @@
 //use risc0_zkvm::serde::{from_slice, to_vec};
 
 fn main() {
-    //multiply::init();
-    //command::run(env!("CARGO_BIN_FILE_MULTIPLY"));
+    methods::init();
+    command::run(env!("CARGO_BIN_FILE_MULTIPLY"));
+    risc0_build::embed_methods();
+
     let a: u64 = 17;
     let b: u64 = 23;
     println!("{a} and {b} are the numbers");
